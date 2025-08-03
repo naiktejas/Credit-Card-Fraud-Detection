@@ -5,51 +5,58 @@ A comprehensive machine learning project that detects fraudulent credit card tra
 ## 🚀 Features
 
 Real-time Fraud Detection: Instant transaction classification with confidence scores
-
 Multiple ML Models: Compare Random Forest and Decision Tree performance
-
 Interactive Web Interface: User-friendly Flask application with modern UI
-
 Class Balance Handling: SMOTE implementation for imbalanced datasets
-
 Comprehensive Evaluation: Detailed metrics and confusion matrix visualization
-
 Sample Data Loading: Quick testing with pre-loaded fraud/legitimate examples
 
 
-##🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 Backend: Python, Flask
-
 Machine Learning: scikit-learn, imbalanced-learn
-
 Data Processing: pandas, NumPy
-
 Visualization: Matplotlib
-
 Frontend: HTML, CSS, JavaScript
-
 Model Persistence: joblib
 
-📊 Project Structure
+## 📊 Project Structure
 Credit-Card-Fraud-Detection/
 ├── app.py                                    # Flask web application
+
 ├── train_model.py                           # ML model training script
+
 ├── balanced_credit_card_fraud_dataset.csv  # Dataset
+
 ├── requirements.txt                         # Python dependencies
+
 ├── templates/
+
 │   └── index.html                          # Web interface template
+
 ├── static/                                 # Static files (CSS, images)
+
 │   ├── rf_conf_matrix.png                 # Random Forest confusion matrix
+
 │   └── dt_conf_matrix.png                 # Decision Tree confusion matrix
+
 ├── .ipynb_checkpoints/                     # Jupyter notebook checkpoints
+
 ├── models/                                 # Trained model files
+
 │   ├── rf_model.pkl                       # Random Forest model
+
 │   ├── dt_model.pkl                       # Decision Tree model
+
 │   ├── test_data.pkl                      # Test dataset
+
 │   └── model_features.pkl                 # Feature list
+
 └── README.md                              # Project documentation
-🔧 Installation & Setup
+
+
+## 🔧 Installation & Setup
 Prerequisites
 
 Python 3.8 or higher
