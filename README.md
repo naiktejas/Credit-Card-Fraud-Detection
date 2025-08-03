@@ -5,20 +5,30 @@ A comprehensive machine learning project that detects fraudulent credit card tra
 ## 🚀 Features
 
 Real-time Fraud Detection: Instant transaction classification with confidence scores
+
 Multiple ML Models: Compare Random Forest and Decision Tree performance
+
 Interactive Web Interface: User-friendly Flask application with modern UI
+
 Class Balance Handling: SMOTE implementation for imbalanced datasets
+
 Comprehensive Evaluation: Detailed metrics and confusion matrix visualization
+
 Sample Data Loading: Quick testing with pre-loaded fraud/legitimate examples
 
 
 ## 🛠️ Technology Stack
 
 Backend: Python, Flask
+
 Machine Learning: scikit-learn, imbalanced-learn
+
 Data Processing: pandas, NumPy
+
 Visualization: Matplotlib
+
 Frontend: HTML, CSS, JavaScript
+
 Model Persistence: joblib
 
 ## 📊 Project Structure
