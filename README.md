@@ -62,7 +62,7 @@ python app.py
 ```
 #### Visit: http://127.0.0.1:5000
 
-##📈 Model Metrics
+## 📈 Model Metrics
 Metric	Description
 
 Accuracy	Overall correctness
@@ -76,7 +76,14 @@ F1-Score	Balance between precision & recall
 Confusion Matrix	Visual performance check
 
 ## 📷 Screenshots
-Add screenshots here (UI, prediction results, metrics, etc.)
+<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/de4f9316-ed70-49d6-9924-71c31d3c187d" />
+
+<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/7da93d61-b4a3-48d6-9d41-b79766872c99" />
+
+<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/80d28eb1-98af-421f-a3fd-d73f1b5d6997" />
+
+
+
 
 ## 👨‍💻 Author
 Tejas M Naik
