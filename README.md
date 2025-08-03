@@ -1,395 +1,280 @@
 💳 Credit Card Fraud Detection System
-
 A comprehensive machine learning project that detects fraudulent credit card transactions using Random Forest and Decision Tree algorithms with an interactive web interface.
 
-<div align="center">
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-</div>
-
 📋 Table of Contents
-
 ✨ Features
+
 🛠️ Technology Stack
+
 📊 Project Structure
+
 🚀 Quick Start
+
 💡 Usage
+
 📈 Model Performance
+
 🖼️ Screenshots
+
 🚀 Deployment
+
 🤝 Contributing
+
 📝 License
+
 👨‍💻 Author
 
+🙏 Acknowledgments
+
+🔮 Future Enhancements
 
 ✨ Features
-<table>
-<tr>
-<td>
-🔍 Real-time Detection
+🔍 Real-time Detection	🤖 Multiple ML Models
+- Instant fraud classification	- Random Forest Classifier
+- Confidence score analysis	- Decision Tree Classifier
+- Sub-second response time	- Performance comparison
 
-Instant fraud classification
-Confidence score analysis
-Sub-second response time
+🎨 Interactive Web UI	⚖️ Class Balance Handling
+- Modern dark theme interface	- SMOTE implementation
+- Responsive design	- Synthetic sample generation
+- User-friendly controls	- Imbalanced data optimization
 
-</td>
-<td>
-🤖 Multiple ML Models
-
-Random Forest Classifier
-Decision Tree Classifier
-Performance comparison
-
-</td>
-</tr>
-<tr>
-<td>
-🎨 Interactive Web UI
-
-Modern dark theme interface
-Responsive design
-User-friendly controls
-
-</td>
-<td>
-⚖️ Class Balance Handling
-
-SMOTE implementation
-Imbalanced dataset optimization
-Synthetic sample generation
-
-</td>
-</tr>
-<tr>
-<td>
-📊 Comprehensive Metrics
-
-Precision, Recall, F1-Score
-Confusion matrix visualization
-Model performance dashboard
-
-</td>
-<td>
-🧪 Sample Data Testing
-
-Pre-loaded fraud examples
-Legitimate transaction samples
-Quick testing functionality
-
-</td>
-</tr>
-</table>
+📊 Comprehensive Metrics	🧪 Sample Data Testing
+- Precision, Recall, F1-Score	- Pre-loaded examples
+- Confusion matrix visualization	- Legitimate & fraud samples
+- Model performance dashboard	- Quick testing features
 
 🛠️ Technology Stack
-<details open>
-<summary><b>Backend Technologies</b></summary>
-TechnologyVersionPurposeShow Image3.8+Core programming languageShow Image2.0+Web frameworkShow Image1.0+Machine learning libraryShow Image1.5+Data manipulationShow Image1.24+Numerical computing
-</details>
-<details>
-<summary><b>Frontend Technologies</b></summary>
-TechnologyPurposeShow ImageStructure and markupShow ImageStyling and designShow ImageInteractive functionality
-</details>
-<details>
-<summary><b>ML & Data Science Libraries</b></summary>
+<details open> <summary><strong>Backend</strong></summary>
+Python 3.8+
 
-imbalanced-learn: SMOTE implementation
-matplotlib: Data visualization
-joblib: Model serialization
-ColumnTransformer: Feature preprocessing
-Pipeline: ML workflow management
+Flask 2.0+
+
+scikit-learn 1.0+
+
+pandas 1.5+
+
+numpy 1.24+
+
+</details> <details> <summary><strong>Frontend</strong></summary>
+HTML
+
+CSS
+
+JavaScript
+
+</details> <details> <summary><strong>ML & Data Science</strong></summary>
+imbalanced-learn (SMOTE)
+
+matplotlib
+
+joblib
+
+ColumnTransformer
+
+Pipeline
 
 </details>
-
 📊 Project Structure
+csharp
+Copy
+Edit
 📦 Credit-Card-Fraud-Detection/
-├── 📄 app.py                                    # 🌐 Flask web application
-├── 📄 train_model.py                           # 🤖 ML model training script
-├── 📊 balanced_credit_card_fraud_dataset.csv   # 📈 Training dataset
-├── 📋 requirements.txt                         # 📦 Python dependencies
-├── 📁 templates/
-│   └── 📄 index.html                          # 🎨 Web interface template
-├── 📁 static/                                 # 🖼️ Static assets
-│   ├── 📊 rf_conf_matrix.png                 # Random Forest confusion matrix
-│   └── 📊 dt_conf_matrix.png                 # Decision Tree confusion matrix
-├── 📁 .ipynb_checkpoints/                     # 📓 Jupyter checkpoints
-├── 📄 rf_model.pkl                           # 🌲 Random Forest model
-├── 📄 dt_model.pkl                           # 🌳 Decision Tree model
-├── 📄 test_data.pkl                          # 🧪 Test dataset
-├── 📄 model_features.pkl                     # 📋 Feature definitions
-└── 📖 README.md                              # 📚 Documentation
-
+├── app.py                         # Flask web application
+├── train_model.py                 # Model training script
+├── balanced_credit_card_fraud_dataset.csv
+├── requirements.txt
+├── templates/
+│   └── index.html                 # Web interface
+├── static/
+│   ├── rf_conf_matrix.png
+│   └── dt_conf_matrix.png
+├── rf_model.pkl
+├── dt_model.pkl
+├── test_data.pkl
+├── model_features.pkl
+└── README.md
 🚀 Quick Start
 📋 Prerequisites
-<div align="center">
-Show Image
-Show Image
-Show Image
-</div>
+Make sure you have Python 3.8+ and Git installed.
+
 ⚡ Installation
-bash# 1️⃣ Clone the repository
+bash
+Copy
+Edit
+# Clone the repository
 git clone https://github.com/tejasnaik/Credit-Card-Fraud-Detection.git
 cd Credit-Card-Fraud-Detection
 
-# 2️⃣ Create virtual environment (recommended)
-python -m venv fraud_detection_env
+# Create and activate virtual environment
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
 
-# 3️⃣ Activate virtual environment
-# Windows:
-fraud_detection_env\Scripts\activate
-# macOS/Linux:
-source fraud_detection_env/bin/activate
-
-# 4️⃣ Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 5️⃣ Train the models
+# Train models
 python train_model.py
 
-# 6️⃣ Run the application
+# Run the application
 python app.py
-🌐 Access the Application
-Open your browser and navigate to:
+🌐 Access the App
+Open your browser and go to:
 http://127.0.0.1:5000
 
 💡 Usage
-🖥️ Web Interface Guide
-<details open>
-<summary><b>Step-by-Step Usage</b></summary>
+Step-by-Step
+Choose Model: Random Forest or Decision Tree
 
-🎯 Select Model
-Choose between Random Forest or Decision Tree
+Input Transaction:
 
-📝 Input Transaction Details
+Amount
 
-💰 Amount: Transaction value (e.g., 1500.00)
-🏪 Merchant ID: Unique identifier (e.g., 12345)
-🛒 Transaction Type: Purchase or Refund
-📍 Location: Geographic location
+Merchant ID
 
+Transaction Type (Purchase/Refund)
 
-🔮 Get Prediction
-Click "Predict" button for instant analysis
+Location
 
-📊 View Results
+Predict: Click "Predict"
 
-Fraud/Legitimate classification
-Confidence percentage
-Model performance metrics
-
-
-
-</details>
-🧪 Sample Data Testing
-ButtonDescriptionUse Case🟢 Load Legit SampleLoads legitimate transactionTest normal transaction flow🔴 Load Fraud SampleLoads fraudulent transactionTest fraud detection accuracy
-🤖 Model Training
-bash# Train both models with full pipeline
-python train_model.py
-Training Process:
-
-✅ Data loading and preprocessing
-✅ Feature engineering and encoding
-✅ SMOTE class balancing
-✅ Model training and evaluation
-✅ Confusion matrix generation
-✅ Model serialization
-
+Results: View prediction, confidence, and metrics
 
 📈 Model Performance
-📊 Dataset Overview
-<table>
-<tr>
-<th>Feature</th>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td><b>Amount</b></td>
-<td>Numerical</td>
-<td>Transaction value</td>
-<td>$1,299.99</td>
-</tr>
-<tr>
-<td><b>MerchantID</b></td>
-<td>Numerical</td>
-<td>Unique merchant identifier</td>
-<td>12345</td>
-</tr>
-<tr>
-<td><b>TransactionType</b></td>
-<td>Categorical</td>
-<td>Purchase or Refund</td>
-<td>purchase</td>
-</tr>
-<tr>
-<td><b>Location</b></td>
-<td>Categorical</td>
-<td>Geographic location</td>
-<td>New York</td>
-</tr>
-</table>
-🔄 ML Pipeline Architecture
-mermaidgraph LR
-    A[Raw Data] --> B[Data Preprocessing]
-    B --> C[Feature Engineering]
-    C --> D[SMOTE Balancing]
-    D --> E[Model Training]
-    E --> F[Model Evaluation]
-    F --> G[Web Deployment]
+📊 Dataset Features
+Feature	Type	Description	Example
+Amount	Numerical	Transaction value	$1,299.99
+MerchantID	Numerical	Unique merchant identifier	12345
+TransactionType	Categorical	Purchase or Refund	Refund
+Location	Categorical	Geographic location	New York
+
+🔄 ML Pipeline
+nginx
+Copy
+Edit
+Raw Data → Preprocessing → Feature Engineering → SMOTE → Training → Evaluation → Deployment
 ⚖️ Model Comparison
-<div align="center">
-Model🎯 Accuracy⚡ Speed🔍 Interpretability🚀 Best For🌲 Random ForestHigherModerateGoodProduction🌳 Decision TreeGoodFastExcellentAnalysis
-</div>
+Model	Accuracy	Speed	Interpretability	Best For
+Random Forest	High	Medium	Medium	Production
+Decision Tree	Good	Fast	High	Analysis
+
 📊 Evaluation Metrics
+Accuracy: Overall correctness
 
-📈 Accuracy: Overall model correctness
-🎯 Precision: True fraud detection rate
-🔍 Recall: Fraud cases caught
-⚖️ F1-Score: Balanced performance metric
-📋 Confusion Matrix: Visual performance analysis
+Precision: Correct fraud predictions
 
+Recall: Caught fraud cases
+
+F1-Score: Balance between precision & recall
+
+Confusion Matrix: Visual performance
 
 🖼️ Screenshots
-<details>
-<summary><b>🖥️ Application Interface</b></summary>
-Main Dashboard
-Coming Soon - Add your actual screenshots here
-Fraud Detection Results
-Coming Soon - Add your actual screenshots here
-Performance Metrics
-Coming Soon - Add your actual screenshots here
+<details> <summary><strong>Click to Expand</strong></summary>
+UI View	Fraud Detection Result	Performance Metrics View
+Add screenshots here	Add screenshots here	Add screenshots here
+
 </details>
-
 🚀 Deployment
-🏠 Local Development
-bashpython app.py
-# Access at http://127.0.0.1:5000
-☁️ Cloud Deployment Options
-<details>
-<summary><b>🌐 Heroku Deployment</b></summary>
-bash# Create Procfile
-echo "web: python app.py" > Procfile
+🏠 Local
+bash
+Copy
+Edit
+python app.py
+Visit http://127.0.0.1:5000
 
-# Deploy to Heroku
+🌐 Heroku (Optional)
+bash
+Copy
+Edit
+echo "web: python app.py" > Procfile
 heroku create your-app-name
 git push heroku main
-</details>
-<details>
-<summary><b>🐳 Docker Deployment</b></summary>
-dockerfileFROM python:3.9-slim
+🐳 Docker
+Dockerfile:
 
+dockerfile
+Copy
+Edit
+FROM python:3.9-slim
 WORKDIR /app
-
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip install -r requirements.txt
 COPY . .
-
 EXPOSE 5000
-
 CMD ["python", "app.py"]
-bash# Build and run
+Build and Run:
+
+bash
+Copy
+Edit
 docker build -t fraud-detection .
 docker run -p 5000:5000 fraud-detection
-</details>
-<details>
-<summary><b>☁️ AWS EC2 Deployment</b></summary>
-
-Launch EC2 instance
-Install Python and dependencies
-Clone repository
-Run with Gunicorn for production
-
-bashpip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
-</details>
-
 🤝 Contributing
-We welcome contributions! Here's how you can help:
-<details>
-<summary><b>🛠️ Development Setup</b></summary>
-bash# Fork the repository
-git fork https://github.com/tejasnaik/Credit-Card-Fraud-Detection
+We welcome contributions!
+Please fork the repo and submit a pull request.
 
-# Clone your fork
-git clone https://github.com/yourusername/Credit-Card-Fraud-Detection
+Example
+bash
+Copy
+Edit
+# Fork and clone
+git clone https://github.com/your-username/Credit-Card-Fraud-Detection.git
 cd Credit-Card-Fraud-Detection
 
-# Create feature branch
-git checkout -b feature/amazing-feature
+# Create a branch
+git checkout -b feature/new-feature
 
-# Make changes and commit
-git commit -m "Add amazing feature"
+# Commit and push
+git commit -m "Add new feature"
+git push origin feature/new-feature
+Contribution Ideas
+🐛 Bug fixes
 
-# Push and create PR
-git push origin feature/amazing-feature
-</details>
-🎯 Contribution Areas
+✨ New features
 
-🐛 Bug Fixes: Report and fix issues
-✨ New Features: Add functionality
-📚 Documentation: Improve docs
-🧪 Testing: Add test cases
-🎨 UI/UX: Enhance interface
+📚 Documentation updates
 
+🧪 Test cases
+
+🎨 UI improvements
 
 📝 License
-<div align="center">
-Show Image
-This project is licensed under the MIT License - see the LICENSE file for details.
-</div>
+This project is licensed under the MIT License.
 
 👨‍💻 Author
-<div align="center">
 Tejas M Naik
 AI/ML Engineering Student
-Show Image
-Show Image
-Show Image
+DLithe Consultancy Services Pvt. Ltd.
 Registration: NNM23CS513
-Institution: DLithe Consultancy Services Pvt. Ltd.
-</div>
 
 🙏 Acknowledgments
-<div align="center">
-🏢 Organization👥 Supervisors🛠️ TechnologiesDLithe ConsultancyMs. Archanascikit-learnServices Pvt. Ltd.Ms. SushmaFlask Framework
-</div>
-🌟 Special Thanks
+DLithe Consultancy – Internship opportunity
 
-🎓 DLithe Consultancy for the internship opportunity
-👨‍🏫 Mentors for guidance and support
-🔬 scikit-learn community for excellent ML tools
-🌐 Flask team for the web framework
-💡 Open source community for inspiration
+Ms. Archana / Ms. Sushma – Mentorship
 
+scikit-learn & Flask – Core technologies
+
+Open-source community – Inspiration
 
 🔮 Future Enhancements
-<div align="center">
-🚀 Roadmap
-</div>
+🧠 Advanced Models: XGBoost, LSTM
 
- 🧠 Advanced Models: Neural Networks, XGBoost, LSTM
- 🔄 Real-time API: Live transaction processing
- 📱 Mobile App: React Native interface
- 🤖 Auto-ML: Automated model selection
- 📊 Advanced Analytics: Time-series analysis
- 🔍 Explainable AI: LIME/SHAP integration
- 📈 Model Monitoring: Drift detection
- ☁️ Cloud Integration: AWS/GCP deployment
- 🔐 Security: Enhanced authentication
- 📧 Alert System: Email/SMS notifications
+🔄 Real-time APIs
 
+📱 Mobile App interface (React Native)
 
-<div align="center">
-⭐ If you found this project helpful, please give it a star! ⭐
-Show Image
-Happy Coding! 🚀
+⚙️ AutoML Integration
 
-Made with ❤️ by Tejas M Naik
-</div>
+📊 Time-series Analysis
+
+🔍 Explainable AI (LIME / SHAP)
+
+☁️ Cloud Deployment: AWS / GCP
+
+📧 Alert System (Email / SMS)
+
+<div align="center"> ⭐ If you found this project helpful, please give it a star! Made with ❤️ by Tejas M Naik </div>
