@@ -105,7 +105,9 @@ imbalanced-learn==0.11.0
 matplotlib==3.7.2
 joblib==1.3.2
 numpy==1.24.3
-💡 Usage
+
+
+## 💡 Usage
 Web Interface
 
 Select Model: Choose between Random Forest or Decision Tree
@@ -135,22 +137,22 @@ Train Random Forest and Decision Tree models
 Generate confusion matrices
 Save trained models for deployment
 
-📈 Model Performance
-Dataset Features
+## 📈 Model Performance
+### Dataset Features
 
 Amount: Transaction value (numerical)
 MerchantID: Merchant identifier (numerical)
 TransactionType: Purchase/Refund (categorical)
 Location: Geographic location (categorical)
 
-Preprocessing Pipeline
+### Preprocessing Pipeline
 
 Numerical Features: StandardScaler normalization
 Categorical Features: One-Hot Encoding
 Class Imbalance: SMOTE oversampling
 Data Split: 80% training, 20% testing (stratified)
 
-Evaluation Metrics
+### Evaluation Metrics
 
 Accuracy
 Precision (Fraud detection)
@@ -158,26 +160,29 @@ Recall (Fraud detection)
 F1-Score (Fraud detection)
 Confusion Matrix visualization
 
-🔍 Model Comparison
+## 🔍 Model Comparison
 ModelAdvantagesUse CaseRandom ForestHigher accuracy, robust against overfittingProduction deploymentDecision TreeInterpretable, faster predictionsRegulatory compliance
 🖼️ Screenshots
 Main Interface
+
 <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/d846b171-308b-46da-895e-2dc4a4a21abe" />
 
 Fraud Detection Result
+
 <img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/e2a7e7e4-bbb4-4e1b-aeef-a0b3d28b1549" />
 
 Model Metrics Dashboard
+
 <img width="200" height="115" alt="image" src="https://github.com/user-attachments/assets/57207f2c-2d6c-4ed6-b768-6abaea06478f" />
 
-📊 Dataset Information
+## 📊 Dataset Information
 The project uses a balanced credit card fraud dataset with the following characteristics:
 
 Target Variable: IsFraud (0: Legitimate, 1: Fraudulent)
 Class Distribution: Balanced dataset for optimal training
 Data Quality: Preprocessed and cleaned for ML applications
 
-🚀 Deployment
+## 🚀 Deployment
 Local Development
 bashpython app.py
 Production Deployment
@@ -198,36 +203,31 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 🤝 Contributing
 
-Fork the repository
-Create a feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
 
-📝 License
+## 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-👨‍💻 Author
+## 👨‍💻 Author
 Tejas M Naik
 
 Registration: NNM23CS513
 Email: naiktejasmn@gmail.com
 GitHub: https://github.com/naiktejas
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 DLithe Consultancy Services Pvt. Ltd. for internship opportunity
 Supervisors: Ms. Archana, Ms. Sushma for guidance and mentorship
 scikit-learn community for excellent ML libraries
 Flask team for the web framework
 
-📚 References
+## 📚 References
 
 scikit-learn Documentation
 Flask Documentation
 imbalanced-learn Documentation
 Fraud Detection Best Practices
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
  Integration with real-time payment APIs
  Advanced neural network models (LSTM, CNN)
