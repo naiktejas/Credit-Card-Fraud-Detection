@@ -2,6 +2,8 @@
 A comprehensive machine learning project that detects fraudulent credit card transactions using Random Forest and Decision Tree algorithms with an interactive web interface.
 
 
+
+
 ## 🚀 Features
 
 Real-time Fraud Detection: Instant transaction classification with confidence scores
@@ -17,6 +19,8 @@ Comprehensive Evaluation: Detailed metrics and confusion matrix visualization
 Sample Data Loading: Quick testing with pre-loaded fraud/legitimate examples
 
 
+
+
 ## 🛠️ Technology Stack
 
 Backend: Python, Flask
@@ -30,6 +34,8 @@ Visualization: Matplotlib
 Frontend: HTML, CSS, JavaScript
 
 Model Persistence: joblib
+
+
 
 ## 📊 Project Structure
 Credit-Card-Fraud-Detection/
@@ -66,6 +72,8 @@ Credit-Card-Fraud-Detection/
 └── README.md                              # Project documentation
 
 
+
+
 ## 🔧 Installation & Setup
 Prerequisites
 
@@ -85,7 +93,10 @@ bashpython train_model.py
 5. Run the Web Application
 bashpython app.py
 Visit http://127.0.0.1:5000 in your browser to access the application.
-📋 Requirements
+
+
+
+## 📋 Requirements
 Create a requirements.txt file with the following dependencies:
 Flask==2.3.3
 pandas==2.0.3
