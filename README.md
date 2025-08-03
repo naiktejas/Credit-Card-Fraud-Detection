@@ -1,4 +1,4 @@
-💳 Credit Card Fraud Detection System
+# 💳 Credit Card Fraud Detection System
 A comprehensive machine learning project that detects fraudulent credit card transactions using Random Forest and Decision Tree algorithms with an interactive web interface.
 
 
